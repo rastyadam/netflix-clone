@@ -1,0 +1,112 @@
+/* Tambahkan reset dasar di bagian paling atas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.login {
+    height: 100vh;
+    /* Pastikan path gambar background sudah benar */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/background_banner.jpg');
+    background-size: cover;
+    padding: 20px 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 60px;
+    margin: auto;
+}
+
+.login-form h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 16px; /* sedikit dikurangi biar lebih rapat */
+    border: 0;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    outline: 0;
+}
+
+.login-form button {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    background: #e50914;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.form-help {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #b3b3b3;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    height: 16px;
+}
+
+
+.remember input {
+    width: 16px;
+    height: 16px;
+    accent-color: #b3b3b3; 
+    cursor: pointer;
+    margin: 0;
+}
+
+.form-switch {
+    margin-top: 40px;
+    color: #737373;
+    font-size: 16px;
+}
+
+.form-switch span {
+    margin-left: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form-switch span:hover {
+    text-decoration: underline;
+}

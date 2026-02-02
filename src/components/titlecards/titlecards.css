@@ -1,0 +1,56 @@
+.titlecards {
+    margin-top: 50px;
+    margin-bottom: 32px;
+}
+
+.titlecards h2 {
+    margin-left: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card-list {
+    display: flex;
+    gap: 15px; /* Sedikit diperlebar jaraknya */
+    overflow-x: auto;
+    padding: 20px 0; /* Tambahkan padding atas-bawah agar saat hover (scale) tidak terpotong */
+}
+
+.card-list::-webkit-scrollbar {
+    display: none;
+}
+
+.card-list .card {
+    position: relative;
+    flex: 0 0 auto;
+    /* Hapus height kaku jika ingin fleksibel, atau pastikan cukup besar */
+    cursor: pointer;
+}
+
+.card-list img {
+    width: 240px;
+    height: auto; /* Biarkan auto agar aspek rasio terjaga, atau tetap 135px (16:9) */
+    aspect-ratio: 16 / 9; 
+    object-fit: contain; /* Ganti ke contain agar gambar asli tidak terpotong */
+    background-color: #333; /* Warna cadangan jika gambar tidak full */
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.card-list .card:hover img {
+    transform: scale(1.1);
+}
+
+.card-list .card p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+    pointer-events: none; 
+}
